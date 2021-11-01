@@ -1,1 +1,15 @@
 foo: main-data-service-dev
+
+app:
+  datasource:
+    main:
+      driver-class-name: org.postgresql.Driver
+      jdbc-url: jdbc:postgresql://127.0.0.1:5432/main_data_service_db?autoReconnect=true&useSSL=false
+      password: 'tsg_mds'
+      pool-size: 30
+      username: tsg_mds
+
+server:
+  error:
+    include-binding-errors: always
+    include-message: always
